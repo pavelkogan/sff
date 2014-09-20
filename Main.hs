@@ -37,9 +37,9 @@ filterArchives :: [Match] -> IO [Book]
 filterArchives m = return . filterBooks m =<< folderBooks sffDir
 
 sffDir, bookDir, calibreDir :: FilePath
-sffDir = "/tank/main/torrent/book/sff"
+sffDir = "/tank/torrent/book/sff"
 bookDir = "/home/pavel/book"
-calibreDir = "/tank/main/book/calibre"
+calibreDir = "/tank/book"
 
 extractBooks :: [Book] -> IO ()
 extractBooks = uncurry (>>) . (u *** d) . splitDuplicates
