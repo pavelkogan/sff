@@ -9,6 +9,6 @@ cabal-version:       >=1.10
 
 executable sff
   main-is:             Main.hs
-  build-depends:       base >=4.6 && <4.7, filepath, process,
+  build-depends:       base >=4.6 && <4.8, filepath, process,
                        directory, case-insensitive, containers
   default-language:    Haskell2010
